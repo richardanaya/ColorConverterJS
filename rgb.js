@@ -175,8 +175,8 @@ function RGBColor(color_string)
     // array of color definition objects
     var color_defs = [
 	    {
-            re: /^rgba\((\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})\),\s*(\d{1,3})\)$/,
-            example: ['rgba(123, 234, 45,255)', 'rgb(255,234,245,255)'],
+	    re: /^rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/,
+            example: ['rgba(123, 234, 45,255)', 'rgba(255,234,245,255)'],
             process: function (bits){
                 return [
                     parseInt(bits[1]),
